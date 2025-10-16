@@ -197,6 +197,7 @@ We use this categorical data encoding technique when the features are nominal(do
 # output
  <img width="1351" height="700" alt="image" src="https://github.com/user-attachments/assets/be883fb6-a330-4be9-8a7d-efb465f1c2ec" />
 #code:
+
 ```
  import seaborn as sns
  import statsmodels.api as sm # STATS MODEL- STATISTICAL MODEL TO VISUALIZE DISTRIBUTION
@@ -204,15 +205,27 @@ We use this categorical data encoding technique when the features are nominal(do
  sm.qqplot(df["Moderate Negative Skew"],line='45') # QQ - QUANTILE QUANTILE PLOT
  plt.show()
 ```
+
+
+
 # output
  <img width="1117" height="702" alt="image" src="https://github.com/user-attachments/assets/c1236215-cd92-4de0-baac-c9b2e1fa7c87" />
+
+
 #code:
 ```
- sm.qqplot(np.reciprocal(df["Moderate Negative Skew"]),line='45') # RECIPROCAL
+
+ sm.qqplot(np.reciprocal(df["Moderate Negative Skew"]),line='45')
  plt.show()
+
 ```
 # output 
+
+
  <img width="970" height="636" alt="image" src="https://github.com/user-attachments/assets/f9c5feee-ea6e-494b-a2ed-21cf42391ac7" />
+
+
+
 #code:
 ```
  from sklearn.preprocessing import QuantileTransformer
@@ -221,6 +234,8 @@ We use this categorical data encoding technique when the features are nominal(do
  sm.qqplot(df["Moderate Negative Skew"],line='45')
  plt.show()
 ```
+
+
 # output
  <img width="1014" height="701" alt="image" src="https://github.com/user-attachments/assets/f4dcf13f-87d3-4da0-bd98-c6b2455c963c" />
 
